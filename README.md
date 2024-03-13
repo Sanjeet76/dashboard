@@ -86,6 +86,10 @@ src
 |   +---Chart
 |   |       chart.css
 |   |       Chart.jsx
+|   |
+|   +---Editproduct
+|   |       edit.css
+|   |       Editproduct.jsx
 |   |       
 |   +---Navbar
 |   |       navbar.css
