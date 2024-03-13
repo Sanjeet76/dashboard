@@ -1,9 +1,8 @@
 .orders {
   display: flex;
-  width: 120%;
+  width: 118%;
 }
 
 .orders .listContainer {
-  
   flex: 6;
 }

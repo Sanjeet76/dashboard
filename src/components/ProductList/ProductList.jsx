@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../Productdata";
 import "./product.css";
+import { Link } from 'react-router-dom';
 
 const ProductList = () => {
   const [data, setData] = useState(userRows);
@@ -18,12 +19,9 @@ const ProductList = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <div
-              className="deleteButton"
-              onClick={() => handleDelete(params.row.id)}
-            >
-              Delete
-            </div>
+           
+            <Link to={`/products/edit/${params.row.id}`} className="editButton" style={{textDecoration:"none"}}>Edit</Link>
+            <div className="deleteButton" onClick={() => handleDelete(params.row.id)}>Delete</div>
           </div>
         );
       },
@@ -34,10 +32,8 @@ const ProductList = () => {
     <div className="productlist">
       <div className="datatableTitle">
         Add New Product
-        
-        <a href="/products/new" className="link">Add New</a>
+        <Link to="/products/new" className="link">Add New</Link>
       </div>
-     
       <DataGrid
         className="datagrid"
         rows={data}

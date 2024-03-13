@@ -7,12 +7,13 @@ import Product from './pages/products/Product';
 import Calendar from './pages/calender/Calender';
 import ProductForm from './components/ProductForm/ProductForm';
 import {  userColumns } from "./Productdata";
+import Editproduct from './components/Editproduct/Editproduct';
 
 
 function App() {
   return (
 
- 
+    
     <Router >
     <Routes>
       <Route path="/" element={<Home />} />
@@ -20,6 +21,7 @@ function App() {
       <Route path="/products" element={<Product />} /> 
       <Route path="/calender" element={<Calendar />} /> 
       <Route path="/products/new" element={<ProductForm inputs={userColumns} title="Add New Product" />} /> 
+      <Route path="/products/edit/:id" element={<Editproduct inputs={userColumns} title="Edit Product" />} />
     </Routes>
   </Router>
   );
