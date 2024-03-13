@@ -50,7 +50,7 @@ The front-end of this application is built using React.js, Material UI
  To run this project locally, follow these steps:
 
     1.Clone the repository:
-        git clone https://github.com/your-username/dashboard.git
+        git clone https://github.com/Sanjeet76/dashboard.git
 
     2. Navigate to the project directory:
          cd dashboard
