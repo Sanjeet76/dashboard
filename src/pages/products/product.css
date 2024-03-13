@@ -1,0 +1,8 @@
+.products {
+  display: flex;
+  width: 110%;
+}
+
+.products .listContainer {
+  flex: 6;
+}

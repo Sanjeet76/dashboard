@@ -1,0 +1,107 @@
+.calendar {
+  margin: 10px;
+}
+
+.calendar .start {
+  margin: 10px;
+  padding: 10px;
+
+  border-radius: 10px;
+
+  border-color: #808080;
+}
+
+.calendar .start:hover {
+  border-color: #6439ff;
+ 
+}
+
+.calendar .button {
+  padding: 1.0em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #babde2;
+
+  border: none;
+  border-radius: 8px;
+
+  
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.calendar .button:hover {
+  background-color: #6439ff;
+
+
+  color: #fff;
+
+  transform: translateY(-1px);
+}
+
+.calendar .button:active {
+  transform: translateY(-1px);
+}
+
+.calender {
+  height: 600px;
+  padding: 20px;
+}
+
+.calender .simpletable {
+  width: 100%;
+  font-size: 24px;
+  color: gray;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calender .simpletable .link {
+  text-decoration: none;
+  color: green;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calender .cellWithImg {
+  display: flex;
+  align-items: center;
+}
+
+.calender .cellWithImg .cellImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.calender .cellWithStatus {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.calender .cellWithStatus.approved {
+  background-color: rgba(0, 128, 0, 0.05);
+  color: green;
+}
+
+.calender .cellWithStatus.Pending {
+  background-color: rgba(255, 217, 0, 0.05);
+  color: goldenrod;
+}
+
+.calender .cellWithStatus.cancel {
+  background-color: rgba(255, 0, 0, 0.05);
+  color: crimson;
+}

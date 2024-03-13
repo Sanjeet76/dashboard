@@ -1,0 +1,9 @@
+.calenderview {
+    display: flex;
+    width: 110%;
+  }
+  
+  .calenderview .listContainer {
+    flex: 6;
+  }
+  
