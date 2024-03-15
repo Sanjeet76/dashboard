@@ -1,9 +1,11 @@
 export const userColumns = [
-    { field: "id", headerName: "Product id", width:150 },
+    { field: "id", headerName: "Product id", width:150 ,editable:true},
     {
       field: "product",
       headerName: "Product Name",
       width: 230,
+      editable:true,
+     
       renderCell: (params) => {
         return (
           <div className="cellWithImg">
@@ -17,27 +19,33 @@ export const userColumns = [
       field: "category",
       headerName: "Category",
       width: 100,
+      editable:true,
+  
     },
   
     {
       field: "price",
       headerName: "Price",
       width: 100,
+      editable:true,
     },
     {
       field: "discount",
       headerName: "Discount",
       width: 100,
+      editable:true,
     },
     {
       field: "quantity",
       headerName: "Quantity",
       width: 100,
+      editable:true,
     },
     {
       field: "status",
       headerName: "Status",
       width: 160,
+      editable:true,
       renderCell: (params) => {
         return (
           <div className={`cellWithStatus ${params.row.status}`}>
