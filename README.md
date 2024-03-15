@@ -29,12 +29,12 @@ The Dashboard Management System is a web application built using React.js. It al
  
 <li> Present a list of products with details such as id ,name, category, price, discount, and  quantity using mock data.</li>
 <li>
- Enable functionalities for  status ,add, delete, filter  products.
+ Enable functionalities for  status ,edit,add, delete, filter  products.
   </il>
 
 ### Orders Management 
 <li> Show a list of orders, including details like tracking ID,product name, customer name, address, order date,delivery date, price, payment method,  and status using mock data.</li>
- <li>Enable functionalities to  status , delete, filter  order.</li>
+ <li>Enable functionalities to  status , edit,delete, filter  order.</li>
 
 
 ### Orders Calendar View 
